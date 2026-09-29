@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chavy C. Torotoro - e-Professional Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #0284c7;
+            --text-color: #334155;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        header p {
+            color: #38bdf8;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            background-color: #1e293b;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0.2rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: #f1f5f9;
+            padding: 1.2rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .upload-box {
+            background: #f8fafc;
+            border: 2px dashed #cbd5e1;
+            padding: 1.5rem 1rem;
+            border-radius: 6px;
+            text-align: center;
+            margin-top: 0.8rem;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .upload-label {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 0.5rem;
+        }
+
+        .upload-label:hover {
+            background-color: #0369a1;
+        }
+
+        .preview-container {
+            margin-top: 1rem;
+            max-width: 100%;
+        }
+
+        .preview-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #cbd5e1;
+            display: none;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .contact-info {
+            margin-top: 0.8rem;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CHAVY C. TOROTORO</h1>
+        <p>ELECTRONICS ENGINEER</p>
+        <div class="contact-info">📧 chavytorotoro5@gmail.com | 📱 09317509987</div>
+        <div class="privacy-badge">🔒 RA 10173 Data Privacy Compliant</div>
+    </header>
+
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#resume">Résumé</a>
+        <a href="#works">Work Samples</a>
+        <a href="#casestudies">Case Studies</a>
+        <a href="#credentials">Credentials & Certificates</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Professional Profile -->
+        <section id="profile">
+            <h2>Professional Profile</h2>
+            <p>Electronics Engineering graduate from Caraga State University with one year of teaching experience. Skilled in electronics, programming, computer applications, AutoCAD drafting, and classroom instruction. Dedicated to applying technical expertise and effective communication in professional engineering and instructional environments.</p>
+        </section>
+
+        <!-- Résumé Section -->
+        <section id="resume">
+            <h2>Résumé Highlights</h2>
+            
+            <div style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Work Experience</h3>
+                <div class="card">
+                    <h3>Instructor | Wardiere Company (2020–2023)</h3>
+                    <ul>
+                        <li>Created and delivered engaging classroom lessons.</li>
+                        <li>Led discussions and kept active in class.</li>
+                        <li>Evaluated student progress and provided constructive feedback.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Education</h3>
+                <p><strong>Bachelor of Science in Electronics Engineering</strong><br>Caraga State University - Main Campus (2020–2024) | Graduated: June 21, 2024</p>
+                <p style="margin-top: 0.5rem;"><strong>Senior High School (STEM)</strong><br>Loreto National High School (2018–2020) | Graduated: May 15, 2020</p>
+            </div>
+
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Core Skills & Languages</h3>
+                <ul>
+                    <li><strong>Technical & Practical:</strong> Classroom Instruction, AutoCAD and 2D Drafting, Electronics & Circuitry</li>
+                    <li><strong>Professional Attributes:</strong> Effective Communication, Programming, Computer Applications</li>
+                    <li><strong>Languages:</strong> English, Filipino, Spanish</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Work Samples -->
+        <section id="works">
+            <h2>Work Samples / Artifacts</h2>
+            <p>Demonstrating technical capability in drafting and system instruction.</p>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Artifact 1: AutoCAD 2D Technical Drafting</h3>
+                    <p>Produced precise structural and schematic layout designs utilizing industry-standard 2D drafting methodologies.</p>
+                </div>
+                <div class="card">
+                    <h3>Artifact 2: Instructional Lesson Modules</h3>
+                    <p>Designed structured student evaluation frameworks and interactive learning material tailored for technical education.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies (STAR Format) -->
+        <section id="casestudies">
+            <h2>Case Studies (STAR Method)</h2>
+            <p>Highlighting measurable achievements and professional impact.</p>
+            
+            <div class="card" style="margin-bottom: 1rem;">
+                <h3>Project: Classroom Engagement & Student Progress Evaluation</h3>
+                <p><strong>Situation:</strong> Tasked with maintaining high student interaction and comprehension rates during complex technical instruction sessions at Wardiere Company.</p>
+                <p><strong>Task:</strong> Redesign delivery methods to drive active class participation and objective progress evaluations.</p>
+                <p><strong>Action:</strong> Led interactive daily discussions, integrated practical problem-solving exercises, and established consistent formative feedback loops.</p>
+                <p><strong>Result:</strong> Successfully improved overall student class participation metrics and evaluation clarity.</p>
+            </div>
+        </section>
+
+        <!-- Credentials & Certificates -->
+        <section id="credentials">
+            <h2>Credentials & Certificates</h2>
+            <p>Official certifications validating participation and instruction in electronics engineering:</p>
+            
+            <div class="grid-2" style="margin-top: 1.5rem;">
+                <!-- Certificate 1 Upload Widget -->
+                <div class="card">
+                    <h3>Certificate of Appreciation</h3>
+                    <p style="font-size: 0.85rem; color: #64748b;">Caraga State University - Dept. of ECE</p>
+                    <div class="upload-box">
+                        <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 0.3rem;">Attach or upload certificate photo:</p>
+                        <label class="upload-label" for="file1">📁 Choose File</label>
+                        <input type="file" id="file1" class="file-input" accept="image/*">
+                        <div class="preview-container">
+                            <img id="preview1" alt="Certificate 1 Preview">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 Upload Widget -->
+                <div class="card">
+                    <h3>Certificate of Recognition</h3>
+                    <p style="font-size: 0.85rem; color: #64748b;">Wardiere Company - Technical Training Division</p>
+                    <div class="upload-box">
+                        <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 0.3rem;">Attach or upload certificate photo:</p>
+                        <label class="upload-label" for="file2">📁 Choose File</label>
+                        <input type="file" id="file2" class="file-input" accept="image/*">
+                        <div class="preview-container">
+                            <img id="preview2" alt="Certificate 2 Preview">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: var(--primary-color); margin-top: 2.5rem; margin-bottom: 0.5rem;">Professional References</h3>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>JHON ZRYCH CARIÑOSA</h3>
+                    <p>Teacher, Caraga State University<br>📧 universityjhonzrych@gamil.com</p>
+                </div>
+                <div class="card">
+                    <h3>JAN PHILIP BALANSAG</h3>
+                    <p>Professor, Caraga State University<br>📧 janphilipb28@gamil.com</p>
+                </div>
+                <div class="card">
+                    <h3>JOMER N. SANDIGAN</h3>
+                    <p>Teacher, Caraga State University<br>📧 jomieeesandigan@gamil.com</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Chavy C. Torotoro. Prepared for Workplace Communication e-Portfolio Compliance.</p>
+    </footer>
+
+    <!-- JavaScript for Live Image Upload Preview -->
+    <script>
+        document.getElementById('file1').addEventListener('change', function(event) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                const output = document.getElementById('preview1');
+                output.src = reader.result;
+                output.style.display = 'block';
+            };
+            if (event.target.files[0]) {
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        });
+
+        document.getElementById('file2').addEventListener('change', function(event) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                const output = document.getElementById('preview2');
+                output.src = reader.result;
+                output.style.display = 'block';
+            };
+            if (event.target.files[0]) {
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        });
+    </script>
+
+</body>
+</html>
